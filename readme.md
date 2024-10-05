@@ -10,7 +10,9 @@ A **UpLife** é uma aplicação destinada à contratação e agendamento de serv
 - **Pesquisa de Profissionais**: Os utilizadores podem procurar freelancers de acordo com a categoria de serviço pretendida.
 - **Agendamento**: Sistema de agendamento que utiliza a API do Google Maps para calcular distâncias e evitar conflitos de horário.
 - **Confirmação de Agendamento**: Os freelancers podem confirmar ou rejeitar solicitações de serviços.
-- **Backend em Node.js** e **Base de Dados Postgres**: Toda a lógica de negócios e armazenamento de dados é implementada utilizando estas tecnologias.
+- **Backend em Node.js**: Toda a lógica de negócios é implementada com Node.js, utilizando Express para a criação de APIs rápidas e escaláveis.
+- **Base de Dados PostgreSQL**: Utilização de PostgreSQL para o armazenamento de dados. A base de dados é gerida através do **Docker**, facilitando o ambiente de desenvolvimento e a configuração da infraestrutura.
+
 
 ## API do Google Maps
 
