@@ -1,0 +1,309 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "UP Life",
+    "version": "1.0.0"
+  },
+  "schemes": ["http", "https"],
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
+  "paths": {
+    "/auth/signin": {
+      "post": {
+        "summary": "POST authsSignin",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "string"
+          }
+        ],
+        "tags": ["Signin"]
+      }
+    },
+    "/auth/signup/freelancers": {
+      "post": {
+        "summary": "POST createFreelancers",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "string"
+          }
+        ],
+        "tags": ["Signup Freelancers"]
+      }
+    },
+    "/auth/signup/clients": {
+      "post": {
+        "summary": "POST createClient",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "string"
+          }
+        ],
+        "tags": ["Signup Clients"]
+      }
+    },
+    "/users": {
+      "get": {
+        "summary": "GET findAll",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "string"
+          }
+        ],
+        "tags": ["Users"]
+      },
+      "post": {
+        "summary": "POST create",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "string"
+          }
+        ],
+        "tags": ["Users"]
+      }
+    },
+    "/users/{id}": {
+      "get": {
+        "summary": "GET findOne",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "string"
+          }
+        ],
+        "tags": ["Users ID"]
+      },
+      "put": {
+        "summary": "PUT update",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "string"
+          }
+        ],
+        "tags": ["Users ID"]
+      },
+      "delete": {
+        "summary": "DELETE deleteUser",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "string"
+          }
+        ],
+        "tags": ["Users ID"]
+      }
+    },
+    "/clients": {
+      "get": {
+        "summary": "GET findAll",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "string"
+          }
+        ],
+        "tags": ["Clients"]
+      }
+    },
+    "/clients/{id}": {
+      "get": {
+        "summary": "GET findOne",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "string"
+          }
+        ],
+        "tags": ["Clients ID"]
+      },
+      "put": {
+        "summary": "PUT update",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "string"
+          }
+        ],
+        "tags": ["Clients ID"]
+      },
+      "delete": {
+        "summary": "DELETE deleteClient",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "string"
+          }
+        ],
+        "tags": ["Clients ID"]
+      }
+    },
+    "/freelancers": {
+      "get": {
+        "summary": "GET findAll",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "string"
+          }
+        ],
+        "tags": ["Freelancers"]
+      }
+    },
+    "/serviceTypes": {
+      "get": {
+        "summary": "GET servicesTypes",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "string"
+          }
+        ],
+        "tags": ["Services Types"]
+      }
+    },
+    "/freelancers/{id}": {
+      "get": {
+        "summary": "GET findOne",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "string"
+          }
+        ],
+        "tags": ["Freelancers ID"]
+      },
+      "put": {
+        "summary": "PUT update",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "string"
+          }
+        ],
+        "tags": ["Freelancers ID"]
+      },
+      "delete": {
+        "summary": "DELETE deleteFreelancer",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "string"
+          }
+        ],
+        "tags": ["Freelancers ID"]
+      }
+    },
+    "/freelancers/{id}/services": {
+      "get": {
+        "summary": "GET getServices",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "string"
+          }
+        ],
+        "tags": ["Services"]
+      },
+      "post": {
+        "summary": "POST addServices",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "string"
+          }
+        ],
+        "tags": ["Services"]
+      }
+    },
+    "/freelancers/{id}/services{serviceId}": {
+      "put": {
+        "summary": "PUT updateService",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "string"
+          }
+        ],
+        "tags": ["Freelancer Services ID"]
+      },
+      "delete": {
+        "summary": "DELETE deleteService",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "string"
+          }
+        ],
+        "tags": ["Freelancer Services ID"]
+      }
+    }
+  }
+}
